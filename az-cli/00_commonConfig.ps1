@@ -1,0 +1,13 @@
+$build_number=7
+$random = Get-Random -Minimum 0 -Maximum 10000
+$rg = "ngcml-dev" + "$build_number"
+$storage_account_name = "ngcmlstoracct" + "$build_number" #globally unique
+$application_insights_name = "ngcmlkjtestai" + "$build_number"
+$container_registry_name = "ngcmlkjtestacr" + "$build_number"
+$keyvault_name = "ngcml-kv" + "$build_number" + "-$random" #globally unique
+$vnet_name = "vnet"
+$training_subnet_name = "subnet"
+#$scoring_subnet_name = "scoring"
+$workspace_name = "ngc-test-wkspace" + "$build_number"
+#$cmk_keyvault = "" #will be set later on dynamically as env variables
+#$resource_cmk_uri = "" #will be set later on dynamically as env variables
